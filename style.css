@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Spicy+Rice:wght@400;500;700&display=swap");
+
+nav {
+    background-color: #ece8df;
+    height: 50px;
+    padding: 10px;
+  }
+
+  .logo {
+    height: 3em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  body {
+    margin: 0;
+    height: 100vh;
+    background-color: #00955d;
+  }
+  .checkerboard {
+    width: 50px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .checkerboard div {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+  .panel {
+    display: flex;
+    justify-content: space-between;
+    font-family: Spicy Rice, sans-serif;
+  }
+  
+  .left {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .right {
+    flex: 1;
+    text-align: right;
+  }
+  .button {
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  

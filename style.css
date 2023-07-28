@@ -124,7 +124,7 @@ nav {
     visibility: hidden;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 390px) {
     body {
       overflow: auto;
     }
@@ -189,7 +189,7 @@ nav {
     height: 0px;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 390px) {
     .content {
       margin: 4rem 1rem; /* Adjust the margin for better responsiveness on smaller screens */
       display: flex;
@@ -227,7 +227,7 @@ nav {
     border: 5px solid black;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 500px) {
     .arch-up-div {
       width: 33rem;
     }

@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Spicy+Rice:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 nav {
     background-color: #ece8df;
-    height: 50px;
+    height: 10%;
     padding: 10px;
   }
 
   .logo {
-    height: 3em;
+    height: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -18,50 +20,230 @@ nav {
     text-decoration: none;
     color: #fff;
   }
-
-  a:hover {
-    text-decoration: underline;
-  }
   body {
     margin: 0;
     height: 100vh;
     background-color: #00955d;
-  }
-  .checkerboard {
-    width: 50px;
-    height: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-  
-  .checkerboard div {
-    width: 100%;
-    height: 100%;
-    background-color: black;
   }
   .panel {
     display: flex;
     justify-content: space-between;
     font-family: Spicy Rice, sans-serif;
   }
-  
-  .left {
-    flex: 1;
-    text-align: left;
+  .embracing {
+    color: #ece8df;
   }
-  
-  .right {
-    flex: 1;
-    text-align: right;
+  .title-heading {
+    font-size: 8em;
+    margin: 2em auto  auto;
   }
-  .button {
-    border-radius: 5px;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 16px;
+  .mobile-heading {
+    font-size: 4em;
+    margin: 1em auto  auto;
+  }
+  .mobile-heading p {
+    margin: 0px;
+  }
+  .title-heading p {
+    margin: 0px;
+  }
+  .subtext {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    max-width: 700px;
+    align-items: center;
+    margin: 1em auto 2em auto;
+  }
+  .circular-button {
     padding: 10px 20px;
+    background-color: #ffca60;
+    color: black;
+    border: none;
+    outline: none;
     cursor: pointer;
+    font-size: 25px;
+    /* Set the border-radius to create circular edges on the left and right sides */
+    border-radius: 10em; /* You can adjust the value to control the roundness */
+    font-family: 'Staatliches', cursive;
   }
   
+  .icon-container {
+    display: flex; /* Use Flexbox to create a flex container */
+    justify-content: space-between; /* Icons will be spaced evenly with space between them */
+    max-width: 220px; /* Optional: Set a maximum width for the container */
+    margin: 2em auto; /* Optional: To center the container horizontally */
+  }
+  
+  .icon {
+    flex: 1; /* Each icon will take an equal amount of space in the container */
+    padding: px; /* Optional: Add some padding around the icons */
+    text-align: center;
+  }
+  
+  .icon img {
+    max-width: 50px; /* Adjust the max-width to your preferred icon size */
+    height: auto; /* Maintain the aspect ratio of the icons */
+  }
+
+  .checkered-div-left {
+    width: 60px;
+    height: 100%; /* Adjust the height as per your requirements */
+    background-image: 
+        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%),
+        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%);
+        background-size: 60px 60px; /* Each square will have a width and height of 80px */
+        background-position: 0 0, 30px 30px;
+    position: fixed;
+    top: 0;
+    background-color: #ece8df;
+  }
+  
+  .checkered-div-right {
+    width: 60px;
+    height: 100%; /* Adjust the height as per your requirements */
+    background-image: 
+        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%),
+        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%);
+        background-size: 60px 60px; /* Each square will have a width and height of 80px */
+        background-position: 0 0, 30px 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ece8df;
+  }
+  
+  .checkered-div-top {
+    width: 100%;
+    height: 0px; /* Adjust the height as per your requirements */
+    background-image: 
+        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%),
+        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%);
+        background-size: 60px 60px; /* Each square will have a width and height of 80px */
+        background-position: 0 0, 30px 30px;
+    background-color: #ece8df;
+    visibility: hidden;
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      overflow: auto;
+    }
+  
+    .checkered-div-top {
+      width: 100%;
+      height: 60px; /* Adjust the height as per your requirements */
+      background-image: 
+          linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%),
+          linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%);
+          background-size: 60px 60px; /* Each square will have a width and height of 80px */
+          background-position: 0 0, 30px 30px;
+      background-color: #ece8df;
+      visibility: visible;
+    }
+  
+    .checkered-div-right {
+      width: 100%;
+      height: 60px;
+      background-image: 
+          linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%),
+          linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%);
+      background-size: 60px 60px;
+      background-position: 0 0, 30px 30px;
+      position: fixed;
+      bottom: 0;
+      top: auto;
+      background-color: #ece8df;
+  }
+  
+    .checkered-div-left {
+        width: 100%;
+        height: 60px;
+        background-image: 
+            linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%),
+            linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%);
+        background-size: 60px 60px;
+        background-position: 0 0, 30px 30px;
+        /* position: absolute;
+        top: 0; */
+        background-color: #ece8df;
+    }
+  
+  }
+  .pin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    /* margin: 5rem 10rem; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    font-family: Spicy Rice, sans-serif;
+  }
+  
+  .text2 {
+    visibility: hidden;
+    margin: 2rem;
+    height: 0px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .content {
+      margin: 4rem 1rem; /* Adjust the margin for better responsiveness on smaller screens */
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center; /* Center items horizontally on smaller screens */
+      align-items: flex-start; /* Align items to the top on smaller screens */
+    }
+    .text {
+      visibility: hidden;
+      height: 0px;
+    }
+    .text2 {
+      visibility: visible;
+      margin: 2rem;
+    }
+  }
+  
+  .imgRight {
+    height: 100px;
+  }
+  
+  /* 
+  @media screen and (max-width: 600px) {
+    .arch-container {
+      height: 62%;
+    }
+  } */
+  
+  .arch-up-div {
+    width: 35rem;
+    height: 100%;
+    background-color: #ece8df;
+    border-radius: 400px 400px 0 0;
+    position: relative;
+    border: 5px solid black;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .arch-up-div {
+      width: 33rem;
+    }
+  }
+  
+  /* Optional: Add content inside the div, centered vertically */
+  .arch-up-div .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set text color to white or any color that suits your design */
+  }
+  
+  .img-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
